@@ -1,6 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+
+import styles from '../styles/layout.module.css';
 
 const myName = 'Daniela Farias';
 
@@ -25,19 +29,37 @@ export default function Layout(
             {/* HEAD != HEADER -> Cabeça != Cabeçalho */}
 
             <header>
-                {home && (
-                    <>
-                        <Image 
-                            priority
-                            src='/images/daniAvatar.jpg'
-                            height={144}
-                            width={144}
-                            alt={myName}
-                        />
+                {
+                    
+                        <>
+                            <Image 
+                                priority
+                                src='/images/daniLogo.gif'
+                                height={500}
+                                width={500}
+                                alt={myName}
+                            />
 
-                        <h1>{myName}</h1>
-                    </>
-                )}
+                            <Navbar expand="md">
+
+                                <Navbar.Brand href="/">My lovely blog 💖</Navbar.Brand>
+                                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+                                <Navbar.Collapse id="basic-navbar-nav">
+                                    <Nav className="mr-auto">
+
+                                        <Nav.Link id='basic-nav-dropdown' href="/">Home</Nav.Link>
+                                        <Nav.Link id='basic-nav-dropdown' href="/hobbies">My hobbies</Nav.Link>
+                                        <Nav.Link id='basic-nav-dropdown' href="/favorite">Favorite Things</Nav.Link>
+                                        <Nav.Link id='basic-nav-dropdown' href="/discoveries">Discoveries</Nav.Link>
+                                        <Nav.Link id='basic-nav-dropdown' href="/dev">Music</Nav.Link>
+                                        <Nav.Link id='basic-nav-dropdown' href="/contact">Contact me</Nav.Link>
+                                    </Nav>
+                                 </Navbar.Collapse>
+                            </Navbar>
+                        </>
+                    
+                }
             </header>
 
             <main>{children}</main>

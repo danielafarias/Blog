@@ -1,10 +1,22 @@
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Date from '../components/date';
 import Layout, {blogTitle} from '../components/layout';
+import { getPostsbyDate } from '../lib/posts';
+import Link from 'next/link';
 
-export default function Home() {
+export default function Home( {postsData}: {
+  postsData: {
+    date: string;
+    title: string;
+    id: string;
+  }
+}) 
+
+{
+
   return (
-    <Layout>
+    <Layout home>
       <Head>
         <title>
           {blogTitle}
@@ -30,9 +42,40 @@ export default function Home() {
         <p>Aqui mulheres têm privilégios.</p>
       </section>
 
-      <Date dateString='2021-07-04'></Date>
+      
+
+      <section>
+        <h2>Blog</h2>
+        <ul>
+          {
+            postsData.map( ({ id, date, title }) => (
+              <li key={id}>
+                <Link href={`/posts/${id}`}>
+                  <a>{title}</a>
+                </Link>
+                <br />
+                <small>
+                  <Date dateString={date}></Date>
+                </small>
+              </li>
+            ) )
+          }
+        </ul>
+      </section>
+
+     
     </Layout>
 
         
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+
+  const postsData = getPostsbyDate();
+  return {
+    props: {
+      postsData
+    }
+  }
 }
