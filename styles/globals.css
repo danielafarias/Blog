@@ -9,8 +9,15 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 html, body {
   background-color: #E4A1C1;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
   
 }
 
@@ -28,9 +35,36 @@ html, main {
   align-items: center;
 }
 
-.navbar {
+
+.navbar.navbar-expand-md {
   background-color: #D7B4ED;
   width: 100%;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 5px #0000005d;
+}
+
+#navbar-brand {
+  color: #ffffff;
+  text-shadow: 2px 2px 0px #0000005d;
+}
+
+#navbar-brand:hover {
+  text-decoration: none;
+}
+
+#basic-nav-dropdown:hover {
+text-decoration: none;
+}
+
+#date {
+  color: #00000091
+}
+
+article {
+  background-color: rgb(243, 243, 226);
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 5px #0000005d;
 }

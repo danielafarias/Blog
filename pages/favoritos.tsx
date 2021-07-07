@@ -1,9 +1,9 @@
 import Layout from '../components/layout';
 
-export default function Contact() {
+export default function Favoritos() {
     return (
         <Layout>
-            <h2>Contact</h2>
+            <h2>Favoritos</h2>
         </Layout>
     );
 }

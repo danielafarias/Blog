@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
-import { Navbar, NavDropdown } from 'react-bootstrap';
-import { Nav } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 
 import styles from '../styles/layout.module.css';
 
@@ -15,7 +13,7 @@ export default function Layout(
     {children: React.ReactNode, home: boolean}
 ) {
     return (
-        <div>
+        <div className={styles.page}>
 
             <Head>
                 <link rel='icon' href='/favicon.ico'/>
@@ -35,25 +33,25 @@ export default function Layout(
                             <Image 
                                 priority
                                 src='/images/daniLogo.gif'
-                                height={500}
-                                width={500}
+                                height={400}
+                                width={400}
                                 alt={myName}
                             />
 
-                            <Navbar expand="md">
+                            <Navbar className='justify-content-center' expand="md">
 
-                                <Navbar.Brand href="/">My lovely blog 💖</Navbar.Brand>
+                                <Navbar.Brand id='navbar-brand' href="/">My lovely blog 💖</Navbar.Brand>
                                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="mr-auto">
 
                                         <Nav.Link id='basic-nav-dropdown' href="/">Home</Nav.Link>
-                                        <Nav.Link id='basic-nav-dropdown' href="/hobbies">My hobbies</Nav.Link>
-                                        <Nav.Link id='basic-nav-dropdown' href="/favorite">Favorite Things</Nav.Link>
-                                        <Nav.Link id='basic-nav-dropdown' href="/discoveries">Discoveries</Nav.Link>
-                                        <Nav.Link id='basic-nav-dropdown' href="/dev">Music</Nav.Link>
-                                        <Nav.Link id='basic-nav-dropdown' href="/contact">Contact me</Nav.Link>
+                                        <Nav.Link id='basic-nav-dropdown' href="/portfolio">Portfólio</Nav.Link>
+                                        <Nav.Link id='basic-nav-dropdown' href="/hobbies">Hobbies</Nav.Link>
+                                        <Nav.Link id='basic-nav-dropdown' href="/favoritos">Favoritos</Nav.Link>
+                                        <Nav.Link id='basic-nav-dropdown' href="/musicas">Músicas</Nav.Link>
+                                        <Nav.Link id='basic-nav-dropdown' href="/contatos">Contatos</Nav.Link>
                                     </Nav>
                                  </Navbar.Collapse>
                             </Navbar>
@@ -62,13 +60,13 @@ export default function Layout(
                 }
             </header>
 
-            <main>{children}</main>
+            <main className={styles.container}>{children}</main>
 
             {!home && (
-                <div>
-                    <Link href="/">
-                        <a>❮❮ Retornar para o Início</a>
-                    </Link>
+                <div className={styles.container}>
+                    <Button className={styles.button} variant='primary' href="/">
+                        ❮❮ Retornar para o Início
+                    </Button>
                 </div>
             )}
         </div>

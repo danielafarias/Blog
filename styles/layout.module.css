@@ -1,4 +1,26 @@
-html, body {
-    background-color: #E4A1C1;
-  }
+.page {
+  background-color: #E4A1C1;
+}
+
+.container {
+  margin: 2rem 2rem 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  background-color: rgb(226, 65, 140);
+  border-color: rgb(226, 65, 140);
+  box-shadow: 2px 2px 5px #0000005d;
+  margin: 1rem;
+}
+
+.button:hover {
+  background-color: #D7B4ED;
+  border-color: #D7B4ED;
+  color: #212529;
+  box-shadow: 2px 2px 5px #0000005d;
+  text-decoration: none;
+}
 

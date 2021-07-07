@@ -4,6 +4,7 @@ import Head from "next/head";
 import Date from "../../components/date";
 import { GetStaticProps, GetStaticPaths } from "next";
 import React from "react";
+import styles from '../styles/layout.module.css';
 
 export default function Post({postData}: {
     postData: {

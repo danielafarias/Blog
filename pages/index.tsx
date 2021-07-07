@@ -4,6 +4,7 @@ import Date from '../components/date';
 import Layout, {blogTitle} from '../components/layout';
 import { getPostsbyDate } from '../lib/posts';
 import Link from 'next/link';
+import styles from '../styles/home.module.css';
 
 export default function Home( {postsData}: {
   postsData: {
@@ -23,46 +24,43 @@ export default function Home( {postsData}: {
         </title>
       </Head>
 
-      <section>
-        <img src="../images/daniAvatar.png"/>
-        <p>Bem-vinda(o)! Pode me chamar de Dani, tenho 20 aninhos, estudante de Desenvolvimento Web. 🧙🏻‍♀️</p>
-        <br/>
-        <p>Gosto de coisas visuais e bonitas, não atoa escolhi o front-end;</p>
-        <p>Apaixonada por programação, tecnologia, arte, design, 
-          jogos (RPG preferencialmente), doces, culturas do Leste Asiático e animais;</p>
-        <p>Cor favorita: Preto;</p>
-        <p>Doces favoritos: Mochi e Chocolate;</p>
-        <p>Signo: Libra;</p>
-        <p>MBTI: INFP</p>
-        <p>Série Favorita: Sons of Anarchy</p>
-        <p>Filmes Favoritos: Portrait of a Lady on Fire e Todos da franquia Chucky</p>
-        <p>Outras coisinhas favoritas: Novels Chinesas e Tailandesas, Webtoons Coreanos e Chineses, 
-          K-Pop, J-pop, C-pop, Podcasts, Realities Shows asiáticos, Terror, True Crime, Suspense, 
-          Kuroshitsuji e Drama Total;</p>
-        <p>Aqui mulheres têm privilégios.</p>
-      </section>
+      <div className={styles.home}>
 
-      
+        <section className={styles.intro}>
+          <h3 className={styles.title}>Bem-vinda(o)!</h3>
+          <img className={styles.avatar} src="../images/daniAvatar.png" alt="Avatar da Dani"/>
+          <div className={styles.introText}>
+            <p>Pode me chamar de Dani. 😊</p>
+            <p>Tenho 20 aninhos, e sou estudante de Desenvolvimento Web. 🧙🏻‍♀️</p>
+            <p>Gosto de coisas visuais e bonitas, não atoa escolhi o front-end;</p>
+            <p>Aqui você irá encontrar sobre assuntos que tenho estudado,</p>
+            <p>e também descobrir sobre meus gostos e peculiariedades. 🤭</p>
+            <p>Aqui mulheres tem privilégio! ⚢</p>
+          </div>
+        </section>
 
-      <section>
-        <h2>Blog</h2>
-        <ul>
-          {
-            postsData.map( ({ id, date, title }) => (
-              <li key={id}>
-                <Link href={`/posts/${id}`}>
-                  <a>{title}</a>
-                </Link>
-                <br />
-                <small>
-                  <Date dateString={date}></Date>
-                </small>
-              </li>
-            ) )
-          }
-        </ul>
-      </section>
+        
 
+        <section className={styles.blogTimeline}>
+          <h2 className={styles.title}>Blog 🔮</h2>
+          <ul>
+            {
+              postsData.map( ({ id, date, title }) => (
+                <li key={id}>
+                  <Link  href={`/posts/${id}`}>
+                    <a className={styles.link}>{title}</a>
+                  </Link>
+                  <br />
+                  <small>
+                    <Date dateString={date}></Date>
+                  </small>
+                </li>
+              ) )
+            }
+          </ul>
+        </section>
+
+      </div>
      
     </Layout>
 
