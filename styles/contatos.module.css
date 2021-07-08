@@ -1,0 +1,29 @@
+.title {
+    text-align: center;
+    color: rgb(243, 243, 226);
+    text-shadow: 2px 2px 0px rgb(226, 65, 140);
+}
+
+.contatoTitle {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(243, 243, 226);
+    text-shadow: 2px 2px 0px #4D1E7D;
+}
+
+.contatos {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+.logo {
+    width: 20%;
+}
+
+.logo:hover {
+    opacity: 0.6;
+    transition: 0.4s;
+}

@@ -31,7 +31,7 @@ export default function Home( {postsData}: {
           <img className={styles.avatar} src="../images/daniAvatar.png" alt="Avatar da Dani"/>
           <div className={styles.introText}>
             <p>Pode me chamar de Dani. 😊</p>
-            <p>Tenho 20 aninhos, e sou estudante de Desenvolvimento Web. 🧙🏻‍♀️</p>
+            <p>Tenho 20 aninhos, Libriana, INFP e sou estudante de Desenvolvimento Web. 🧙🏻‍♀️</p>
             <p>Gosto de coisas visuais e bonitas, não atoa escolhi o front-end;</p>
             <p>Aqui você irá encontrar sobre assuntos que tenho estudado,</p>
             <p>e também descobrir sobre meus gostos e peculiariedades. 🤭</p>

@@ -1,0 +1,71 @@
+.portfolio {
+    display:flex;
+    justify-content:center;
+    text-align:center;
+} 
+
+.portfolioLogo {
+    width: 50%;
+    margin: 1rem;
+}
+
+.portfolioSections {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+} 
+
+.btn {
+    background-color: rgb(226, 65, 140);
+    border-color: rgb(226, 65, 140);
+    box-shadow: 2px 2px 5px #0000005d;
+    margin: 1rem;
+    font-weight: bold;
+    color: rgb(243, 243, 226);
+}
+
+.btn:hover {
+    background-color: #D7B4ED;
+    border-color: #D7B4ED;
+    box-shadow: 2px 2px 5px #0000005d;
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #212529;
+    transition: 0.5s;
+}
+
+.listItem {
+    background-color: rgba(226, 65, 140, 0.596);
+    border-color: rgba(99, 37, 66, 0.384);
+    font-weight: bold;
+    color: rgb(243, 243, 226);
+}
+
+.listItem:hover {
+    cursor: pointer;
+    background-color: #D7B4ED;
+    border-color: #D7B4ED;
+    box-shadow: 2px 2px 5px #0000005d;
+    font-weight: bold;
+    text-decoration: none;
+    color: #212529;
+    transition: 0.5s;
+}
+
+.listItem:focus {
+    cursor: pointer;
+    background-color: #D7B4ED;
+    border-color: #D7B4ED;
+    box-shadow: 2px 2px 5px #0000005d;
+    font-weight: bold;
+    text-decoration: none;
+    color: #212529;
+    transition: 0.5s;
+}
+
+.title {
+    text-align: center;
+    color: rgb(243, 243, 226);
+    text-shadow: 2px 2px 0px rgb(226, 65, 140);
+}
