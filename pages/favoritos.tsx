@@ -1,9 +1,17 @@
 import Layout from '../components/layout';
 import styles from '../styles/favoritos.module.css';
+import Head from 'next/head';
 
 export default function Favoritos() {
     return (
         <Layout>
+
+            <Head>
+                <title>
+                Favoritos
+                </title>
+            </Head>
+
             <h2 className={styles.title}>Favoritos 🌙</h2>
             <article>
                 <div className={styles.container}>

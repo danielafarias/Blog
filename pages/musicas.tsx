@@ -1,9 +1,17 @@
 import Layout from '../components/layout';
 import styles from '../styles/musica.module.css'
+import Head from 'next/head';
 
 export default function Musica() {
     return (
         <Layout>
+
+            <Head>
+                <title>
+                    Musicas
+                </title>
+            </Head>
+
             <div className={styles.musica}>
                 <h2 className={styles.title}>Músicas 🪄</h2>
                 <section className={styles.favs}>

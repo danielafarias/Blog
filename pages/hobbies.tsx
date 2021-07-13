@@ -1,9 +1,16 @@
 import Layout from "../components/layout";
 import styles from '../styles/hobbies.module.css';
+import Head from 'next/head';
 
 export default function Hobbies() {
     return (
         <Layout>
+
+            <Head>
+                <title>
+                    Hobbies
+                </title>
+            </Head>
             
             <h2 className={styles.title}>Hobbies 🧹</h2>
             <article>

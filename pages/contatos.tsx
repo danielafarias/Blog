@@ -1,10 +1,18 @@
 import Layout from '../components/layout';
 import styles from '../styles/contatos.module.css';
 import { Container, Row, Col } from 'react-bootstrap';
+import Head from 'next/head';
 
 export default function Contatos() {
     return (
         <Layout>
+
+            <Head>
+                <title>
+                Contatos
+                </title>
+            </Head>
+
             <h2 className={styles.title}>Contatos 🪞</h2>
             <Container className={styles.contatos}>
 

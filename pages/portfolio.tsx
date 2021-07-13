@@ -1,10 +1,18 @@
 import Layout from '../components/layout';
 import { Button, ListGroup } from 'react-bootstrap';
 import styles from '../styles/portfolio.module.css';
+import Head from 'next/head';
 
 export default function Portfolio() {
     return (
         <Layout>
+
+            <Head>
+                <title>
+                    Portfolio
+                </title>
+            </Head>
+
             <h2 className={styles.title}>Portfolio 📜</h2>
             <div className={styles.portfolio}>
                 <div className={styles.portfolioSections}>
