@@ -10,7 +10,7 @@ export const blogTitle = 'Daniela Farias | Front-end Developer';
 
 export default function Layout(
     {children, home}:
-    {children: React.ReactNode, home: boolean}
+    {children: React.ReactNode, home?: boolean}
 ) {
     return (
         <div className={styles.page}>
