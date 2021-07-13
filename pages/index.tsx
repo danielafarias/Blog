@@ -11,7 +11,7 @@ export default function Home( {postsData}: {
     date: string;
     title: string;
     id: string;
-  }
+  }[]
 }) 
 
 {
