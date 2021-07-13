@@ -12,7 +12,7 @@ export default function Contatos() {
 
                     <Col xs={12} sm={6} md={3} className={styles.contato}>
                         <h3 className={styles.contatoTitle}>Github</h3>
-                        <a href='https://github.com/danielafarias' target='_blank'>
+                        <a href='https://github.com/danielafarias' rel="noreferrer" target='_blank'>
                             <img 
                                 className={styles.logo} 
                                 src="/images/github.png" 
@@ -23,7 +23,7 @@ export default function Contatos() {
 
                     <Col xs={12} sm={6} md={3} className={styles.contato}>
                         <h3 className={styles.contatoTitle}>Linkedin</h3>
-                        <a href='https://www.linkedin.com/in/danielacfarias/' target='_blank'>
+                        <a href='https://www.linkedin.com/in/danielacfarias/' rel="noreferrer" target='_blank'>
                             <img 
                                 className={styles.logo} 
                                 src="/images/linkedin.png" 
@@ -34,7 +34,7 @@ export default function Contatos() {
 
                     <Col xs={12} sm={6} md={3} className={styles.contato}>
                         <h3 className={styles.contatoTitle}>Stackoverflow</h3>
-                        <a href='https://stackoverflow.com/users/16210712/dani-hexe' target='_blank'>
+                        <a href='https://stackoverflow.com/users/16210712/dani-hexe' rel="noreferrer" target='_blank'>
                             <img 
                                 className={styles.logo} 
                                 src="/images/stackoverflow.png" 
@@ -45,7 +45,7 @@ export default function Contatos() {
 
                     <Col xs={12} sm={6} md={3} className={styles.contato}>
                         <h3 className={styles.contatoTitle}>Instagram</h3>
-                        <a href='https://www.instagram.com/danic.farias/' target='_blank'>
+                        <a href='https://www.instagram.com/danic.farias/' rel="noreferrer" target='_blank'>
                             <img 
                                 className={styles.logo} 
                                 src="/images/instagram.png" 
@@ -56,7 +56,7 @@ export default function Contatos() {
 
                     <Col xs={12} sm={6} md={3} className={styles.contato}>
                         <h3 className={styles.contatoTitle}>Behance</h3>
-                        <a href='https://www.behance.net/fariasdani3d5d' target='_blank'>
+                        <a href='https://www.behance.net/fariasdani3d5d' rel="noreferrer" target='_blank'>
                             <img 
                                 className={styles.logo} 
                                 src="/images/behance.png" 

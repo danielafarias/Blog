@@ -16,13 +16,13 @@ export default function Portfolio() {
                     <h3 className={styles.title}>APP List</h3>
                     <img className={styles.portfolioLogo} src="/images/react.svg" alt='react logo'/>
                     <ListGroup>
-                        <ListGroup.Item className={styles.listItem} action href='https://asianfy.herokuapp.com/' target='_blank'>Asianfy - CRUD</ListGroup.Item>
-                        <ListGroup.Item className={styles.listItem} action href='https://the-rick-and-morty-app.herokuapp.com/' target='_blank'>Rick and Morty</ListGroup.Item>
-                        <ListGroup.Item className={styles.listItem} action href='https://dragonball-crud.netlify.app/' target='_blank'>Dragon Ball - CRUD</ListGroup.Item>
-                        <ListGroup.Item className={styles.listItem} action href='https://calculadora-de-dano.herokuapp.com/' target='_blank'>Calculadora de Dano RPG</ListGroup.Item>
-                        <ListGroup.Item className={styles.listItem} action href='https://calculadora-imc-next.netlify.app/' target='_blank'>Calculadora de IMC</ListGroup.Item>
-                        <ListGroup.Item className={styles.listItem} action href='https://simple-timer-app.netlify.app/' target='_blank'>Temporizador Simples</ListGroup.Item>
-                        <ListGroup.Item className={styles.listItem} action href='https://simple-app-counter.herokuapp.com/' target='_blank'>Contador Simples</ListGroup.Item>
+                        <ListGroup.Item className={styles.listItem} action href='https://asianfy.herokuapp.com/' target='_blank' rel="noreferrer">Asianfy - CRUD</ListGroup.Item>
+                        <ListGroup.Item className={styles.listItem} action href='https://the-rick-and-morty-app.herokuapp.com/' target='_blank' rel="noreferrer">Rick and Morty</ListGroup.Item>
+                        <ListGroup.Item className={styles.listItem} action href='https://dragonball-crud.netlify.app/' target='_blank' rel="noreferrer">Dragon Ball - CRUD</ListGroup.Item>
+                        <ListGroup.Item className={styles.listItem} action href='https://calculadora-de-dano.herokuapp.com/' target='_blank' rel="noreferrer">Calculadora de Dano RPG</ListGroup.Item>
+                        <ListGroup.Item className={styles.listItem} action href='https://calculadora-imc-next.netlify.app/' target='_blank' rel="noreferrer">Calculadora de IMC</ListGroup.Item>
+                        <ListGroup.Item className={styles.listItem} action href='https://simple-timer-app.netlify.app/' target='_blank' rel="noreferrer">Temporizador Simples</ListGroup.Item>
+                        <ListGroup.Item className={styles.listItem} action href='https://simple-app-counter.herokuapp.com/' target='_blank' rel="noreferrer">Contador Simples</ListGroup.Item>
                     </ListGroup>
                 </div>
             </div>

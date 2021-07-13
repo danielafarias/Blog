@@ -26,7 +26,7 @@ export default function Favoritos() {
                         <p>💖 <strong>Dramas:</strong> Yuri or Another e Addicted Heroin</p>
                         <p>💖 <strong>Novels:</strong> 你丫上瘾了? e รัก นี้ บังเอิญ คือ คุณ </p>
                         <p>💖 <strong>Manhua:</strong> Tamen De Gushi</p>
-                        <p>💖 <strong>Podcasts:</strong> Vários de Terror, True Crime, Comédia e Ciência. <a className={styles.link} target='_blank' href='https://open.spotify.com/playlist/2U0m3PAaNRLLohzeFTkIUV?si=50595a12fe99480d'>Playlist Aqui ↗</a>.</p>
+                        <p>💖 <strong>Podcasts:</strong> Vários de Terror, True Crime, Comédia e Ciência. <a className={styles.link} rel="noreferrer" target='_blank' href='https://open.spotify.com/playlist/2U0m3PAaNRLLohzeFTkIUV?si=50595a12fe99480d'>Playlist Aqui ↗</a>.</p>
                     </div>
                 </div>
             </article>
