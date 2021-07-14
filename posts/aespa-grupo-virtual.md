@@ -12,6 +12,6 @@ Mundo virtual x real No aespa, cada uma das integrantes reais do grupo terá sua
 ##
 **As integrantes reais vão se promover como qualquer outro artista, mas o mundo virtual vai se tornar um novo espaço, onde os avatares também se promoverão. As duas partes do grupo vão se divulgar online e offline, criando uma ponte entre o mundo real e o virtual.**
 ##
-![alt text](https://www.recreio.com.br/images/large/2020/10/30/aespa-1224964.jpg)
+![alt text](https://koreajoongangdaily.joins.com/data/photo/2020/11/10/38d825ff-4473-48c3-be49-909b9af9815a.jpg)
 ##
 **Texto retirado em Splash na uol.com.br**

@@ -4,7 +4,8 @@ import Head from "next/head";
 import Date from "../../components/date";
 import { GetStaticProps, GetStaticPaths } from "next";
 import React from "react";
-import styles from '../styles/layout.module.css';
+import styles from '../../styles/layout.module.css';
+import { Container, Row, Col } from "react-bootstrap";
 
 export default function Post({postData}: {
     postData: {
@@ -19,13 +20,18 @@ export default function Post({postData}: {
         <Head>
             <title>{postData.title}</title>
         </Head>
-        <article>
-            <h1>{postData.title}</h1>
-            <div>
-                <Date dateString={postData.date}/>
-            </div>
-            <div dangerouslySetInnerHTML={{ __html: postData.htmlContent }}/>
-        </article>
+
+        <Container>
+            <Row>
+            <article>
+                <h1 className={styles.title}>{postData.title}</h1>
+                <div className={styles.text}>
+                    <Date dateString={postData.date}/>
+                </div>
+                <div className={styles.text} dangerouslySetInnerHTML={{ __html: postData.htmlContent }}/>
+            </article>
+            </Row>
+        </Container>
     </Layout>)
 }
 

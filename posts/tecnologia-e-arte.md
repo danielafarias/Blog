@@ -20,6 +20,6 @@ Ao apropriar-se das novas ferramentas tecnológicas a arte também conseguiu sai
 
 E não é somente no apoio à criação e divulgação da arte que a tecnologia pode ser útil. Alguns teóricos afirmam que em breve, computadores produzirão canções, textos literários, quadros e esculturas tão elogiados quanto as disputadas obras primas atuais.
 ##
-![alt text](https://conteudo.imguol.com.br/blogs/288/files/2019/06/Mori-Building-Japan-1024x682.jpeg)
+![alt text](https://i.pinimg.com/236x/6e/d7/fb/6ed7fb01d26fff1f5e8f7863afeb4428--olivier-dani.jpg)
 ##
 **Texto retirado de artout.com.br**

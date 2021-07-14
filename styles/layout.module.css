@@ -24,3 +24,15 @@
   text-decoration: none;
 }
 
+.title {
+  text-align: center;
+  color: #D7B4ED;
+  text-shadow: 2px 2px 0px rgb(226, 65, 140);
+}
+
+.text {
+  margin: 2rem;
+  text-align: start;
+}
+
+
