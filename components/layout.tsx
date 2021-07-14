@@ -50,7 +50,6 @@ export default function Layout(
                                         <Nav.Link id='basic-nav-dropdown' href="/portfolio">Portfólio</Nav.Link>
                                         <Nav.Link id='basic-nav-dropdown' href="/hobbies">Hobbies</Nav.Link>
                                         <Nav.Link id='basic-nav-dropdown' href="/favoritos">Favoritos</Nav.Link>
-                                        <Nav.Link id='basic-nav-dropdown' href="/musicas">Músicas</Nav.Link>
                                         <Nav.Link id='basic-nav-dropdown' href="/contatos">Contatos</Nav.Link>
                                     </Nav>
                                  </Navbar.Collapse>
